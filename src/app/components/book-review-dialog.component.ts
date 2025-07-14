@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
-import { ProfileStateService } from '@bookstore-app/shared-lib';
+import { AuthService, ProfileStateService } from '@bookstore-app/shared-lib';
 
 @Component({
   selector: 'app-book-review-dialog',
@@ -12,5 +12,10 @@ import { ProfileStateService } from '@bookstore-app/shared-lib';
 export class BookReviewDialogComponent {
   data: any = inject(MAT_DIALOG_DATA);
   profile = inject(ProfileStateService);
+  auth = inject(AuthService);
+
+  constructor() {
+    console.log('auth user', this.auth.user());
+  }
 
 }
