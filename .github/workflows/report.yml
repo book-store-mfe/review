@@ -13,7 +13,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
-          repo="book-store-mfe/store"
+          repo="book-store-mfe/review"
           manifest_url="https://book-store-mfe.github.io/review/mf-manifest.json"
 
           sleep 15
