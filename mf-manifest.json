@@ -1,7 +1,7 @@
 {
   "name": "review",
   "version": "0.0.0",
-  "id": "e330837d1db58366decad70c74c0986b9ad016e6",
+  "id": "0ede88a5c7a7af4b35971fd70c8e0b934b4790ec",
   "remotes": {
     "store": "https://book-store-mfe.github.io/store/mf-manifest.json",
     "account": "https://book-store-mfe.github.io/account/mf-manifest.json",
